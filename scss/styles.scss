@@ -11,7 +11,10 @@
     li{
         float: left;
         width: (100% /6);
-        list-style: none;
+        @include mQ(600px){
+            width: 100%;
+        }
+
     }
     a{
         color: $offWhite;
